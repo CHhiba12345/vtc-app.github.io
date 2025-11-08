@@ -1,0 +1,125 @@
+{
+  "welcome": "Welcome",
+  "title": "VTC Marseille Premium",
+  "description": "Premium VTC service in Marseille",
+  "hero": {
+    "title": "VTC MARSEILLE",
+    "titleHighlight": "PREMIUM TRANSPORT",
+    "subtitle": "At your service",
+    "description": "Professional VTC service in Marseille and PACA region. Airport transfers, urban rides, private events. Premium vehicles, experienced drivers, available 24/7.",
+    "cta": "Book Now"
+  },
+  "introduction": {
+    "subtitle": "About VTC Marseille Premium",
+    "title": "YOUR PRIVATE DRIVER IN MARSEILLE",
+    "description": "VTC Marseille Premium is your trusted partner for all your trips in the Marseille region. With over 10 years of experience in passenger transport, we offer a premium service combining comfort, punctuality and discretion. Our fleet of premium vehicles and professional drivers guarantee you a peaceful journey.",
+    "cta": "Discover Our Services"
+  },
+  "services": {
+    "subtitle": "Our Services",
+    "title": "Complete VTC Services in Marseille",
+    "airportTransfer": {
+      "name": "Airport Transfer",
+      "description": "Shuttle service from/to Marseille Provence Airport 24/7",
+      "subservices": [
+        "Airport → Marseille",
+        "Marseille → Airport",
+        "Flight tracking",
+        "Personalized welcome"
+      ]
+    },
+    "businessTransport": {
+      "name": "Business Transport",
+      "description": "Transport solutions for your business appointments and professional trips",
+      "subservices": [
+        "Business meetings",
+        "Regular transport",
+        "Vehicle hire",
+        "Corporate billing"
+      ]
+    },
+    "eventTransport": {
+      "name": "Events",
+      "description": "Transport for your private events, weddings and special occasions",
+      "subservices": ["Weddings", "Parties", "Birthdays", "Private events"]
+    },
+    "cityTransport": {
+      "name": "Urban Rides",
+      "description": "Trips in Marseille and its region with on-demand service",
+      "subservices": [
+        "City center",
+        "Train stations",
+        "Medical appointments",
+        "Shopping"
+      ]
+    },
+    "touristTransport": {
+      "name": "Tourist Tours",
+      "description": "Discover Marseille and the PACA region with driver guide",
+      "subservices": ["Calanques", "Cassis", "Aix-en-Provence", "Guided tours"]
+    }
+  },
+  "vehicles": {
+    "subtitle": "Our Fleet",
+    "title": "Premium Vehicles",
+    "description": "A modern and maintained fleet for your comfort and safety",
+    "cta": "See All Vehicles"
+  },
+  "drivers": {
+    "subtitle": "Our Team",
+    "title": "Professional Drivers",
+    "description": "Experienced, discreet and punctual drivers at your service"
+  },
+  "reviews": {
+    "subtitle": "Testimonials",
+    "title": "Customer Reviews",
+    "description": "Discover why our customers trust us",
+    "cta": "Leave a Review"
+  },
+  "coverage": {
+    "subtitle": "Coverage Area",
+    "title": "Marseille and PACA Region",
+    "description": "Service available throughout the Marseille region and surroundings"
+  },
+  "stats": {
+    "title": "VTC Marseille in Numbers",
+    "description": "Over 10 years of excellence in VTC transport with recognized expertise and a team dedicated to service quality.",
+    "yearsExperience": "Years of experience",
+    "years": " Years",
+    "employees": "Drivers",
+    "vehicles": "Vehicles",
+    "clients": "Satisfied customers"
+  },
+  "reservation": {
+    "subtitle": "Book Now",
+    "title": "Ready for Your Next Trip?",
+    "description": "Our team of professional drivers is ready to drive you safely. Book your VTC ride now.",
+    "cta": "Book Now"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Need a VTC in Marseille?",
+    "description": "Our team is available 24/7 to meet your transport needs. Contact us for a booking or information.",
+    "namePlaceholder": "Your name",
+    "phonePlaceholder": "Your phone",
+    "emailPlaceholder": "your.email@example.com",
+    "messagePlaceholder": "Tell us about your trip...",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "successTitle": "Message Sent Successfully!",
+    "successMessage": "Thank you for contacting us. We will respond as soon as possible.",
+    "errorTitle": "Send Error",
+    "errorMessage": "Sorry, an error occurred while sending your message. Please try again."
+  },
+  "footer": {
+    "description": "VTC Marseille Premium - Professional chauffeur transport service. Specialized in airport transfers, business transport and private events in the Marseille region.",
+    "contactUs": "Contact us",
+    "services": "Services",
+    "company": "Company",
+    "home": "Home",
+    "about": "About",
+    "vehicles": "Vehicles",
+    "contact": "Contact",
+    "copyright": "© {{year}} VTC Marseille Premium. All rights reserved."
+  }
+}
