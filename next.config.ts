@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
     domains: ["images.unsplash.com"],
   },
   trailingSlash: true,
-  basePath: "/vtc.github.io", // Ajouter cette ligne si vous gardez l'URL actuelle
+  basePath: "", // Vide pour https://vtc.github.io/ ou "/vtc.github.io" pour https://vtc-app.github.io/vtc.github.io/
 };
 
 export default nextConfig;
