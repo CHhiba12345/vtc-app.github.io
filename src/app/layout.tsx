@@ -14,18 +14,72 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "MassiliaDrive",
-  description: "MassiliaDrive - Transfer Premium",
+// Fonction pour récupérer les métadonnées selon la langue
+const getMetadataByLang = (lang: string): Metadata => {
+  const titles = {
+    fr: "MassiliaDrive - VTC Premium à Marseille",
+    en: "MassiliaDrive - Premium VTC in Marseille",
+  };
+
+  const descriptions = {
+    fr: "Services de transfert haut de gamme, fiables et professionnels à Marseille et en région PACA.",
+    en: "Premium, reliable and professional transfer services in Marseille and PACA region.",
+  };
+
+  const keywords =
+    "VTC, Marseille, transfert, luxe, professionnel, aéroport, tourisme, business";
+
+  return {
+    metadataBase: new URL("https://massiliadrive-bnzj.vercel.app/"),
+    title: titles[lang as keyof typeof titles] || titles["fr"],
+    description:
+      descriptions[lang as keyof typeof descriptions] || descriptions["fr"],
+    keywords: keywords,
+    openGraph: {
+      title: titles[lang as keyof typeof titles] || titles["fr"],
+      description:
+        descriptions[lang as keyof typeof descriptions] || descriptions["fr"],
+      images: [
+        {
+          url: "/opengraph-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: "MassiliaDrive - VTC Premium",
+        },
+      ],
+      locale: lang === "fr" ? "fr_FR" : "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: titles[lang as keyof typeof titles] || titles["fr"],
+      description:
+        descriptions[lang as keyof typeof descriptions] || descriptions["fr"],
+    },
+  };
 };
+
+// Fonction dynamique côté serveur pour générer les métadonnées
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale?: string };
+}): Promise<Metadata> {
+  const lang = params?.locale || "fr";
+  return getMetadataByLang(lang);
+}
 
 export default function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: { locale?: string };
 }) {
+  const lang = params?.locale || "fr";
+
   return (
-    <html className="size-full">
+    <html lang={lang}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
